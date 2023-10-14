@@ -1,0 +1,23 @@
+{
+	"name": "Bronze_cert_details_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Bronze_Source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "muskaan596/Capstone_Project/raw/main/employeecertificationdetails.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

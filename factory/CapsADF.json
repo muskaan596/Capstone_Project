@@ -1,0 +1,9 @@
+{
+	"name": "CapsADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "77b817ea-fdcc-488f-a414-81a48afa1b53",
+		"tenantId": "2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0"
+	}
+}

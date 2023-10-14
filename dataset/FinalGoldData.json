@@ -1,0 +1,66 @@
+{
+	"name": "FinalGoldData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GoldSink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-tid-4191349674045951050-5f334ac7-69bc-4c86-b1dc-42de388ac69c-411-1-c000.csv",
+				"folderPath": "Gold_emp_Final",
+				"fileSystem": "gold-emp-cert"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CertificationId",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "String"
+			},
+			{
+				"name": "ExamDate",
+				"type": "String"
+			},
+			{
+				"name": "AttendedStatus",
+				"type": "String"
+			},
+			{
+				"name": "Marks",
+				"type": "String"
+			},
+			{
+				"name": "Result",
+				"type": "String"
+			},
+			{
+				"name": "CertificationType",
+				"type": "String"
+			},
+			{
+				"name": "Title",
+				"type": "String"
+			},
+			{
+				"name": "Competency",
+				"type": "String"
+			},
+			{
+				"name": "Complexity",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
